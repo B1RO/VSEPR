@@ -1,8 +1,7 @@
 import React, { useState, KeyboardEvent } from 'react';
-import {MolecularFormula} from "./types/molecular_formula.ts";
 
 interface MoleculeInputProps {
-    onEnterMolecule: (molecule: MolecularFormula) => void;
+    onEnterMolecule: (molecule: string) => void;
 }
 
 export const MoleculeInput: React.FC<MoleculeInputProps> = ({ onEnterMolecule }) => {
@@ -28,7 +27,7 @@ export const MoleculeInput: React.FC<MoleculeInputProps> = ({ onEnterMolecule })
                 type="text"
                 value={molecule}
                 onChange={handleInputChange}
-                onKeyPress={handleEnterPress}
+                onKeyDown={handleEnterPress}
                 placeholder="Enter Molecular Formula"
             />
             <button onClick={handleButtonClick}>Enter Molecule</button>
