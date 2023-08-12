@@ -1,9 +1,7 @@
-type ElementData = {
-   name : string,
-   electronegativity : string
-}
+import {ElementData} from "./types/element_data.ts";
+import {ElementSymbol} from "./types/element_symbol.tsx";
 
-export const elements: Record<string, ElementData> = {
+export const elements: Record<ElementSymbol, ElementData> = {
     H: { name: "Hydrogen", electronegativity: 2.20 },
     He: { name: "Helium", electronegativity: null },
     Li: { name: "Lithium", electronegativity: 0.98 },
