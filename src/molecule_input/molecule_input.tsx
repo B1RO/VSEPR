@@ -1,7 +1,8 @@
 import React, { useState, KeyboardEvent } from 'react';
+import {MolecularFormula} from "./types/molecular_formula.ts";
 
 interface MoleculeInputProps {
-    onEnterMolecule: (molecule: string) => void;
+    onEnterMolecule: (molecule: MolecularFormula) => void;
 }
 
 export const MoleculeInput: React.FC<MoleculeInputProps> = ({ onEnterMolecule }) => {
