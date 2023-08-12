@@ -1,4 +1,9 @@
-const elements: Record<string, ElementData> = {
+type ElementData = {
+   name : string,
+   electronegativity : string
+}
+
+export const elements: Record<string, ElementData> = {
     H: { name: "Hydrogen", electronegativity: 2.20 },
     He: { name: "Helium", electronegativity: null },
     Li: { name: "Lithium", electronegativity: 0.98 },
