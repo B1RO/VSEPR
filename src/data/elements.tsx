@@ -1,5 +1,5 @@
-import {ElementData} from "./types/element_data.ts";
-import {ElementSymbol} from "./types/element_symbol.tsx";
+import {ElementData} from "../types/element_data.ts";
+import {ElementSymbol} from "../types/element_symbol.tsx";
 
 export const elements: Record<ElementSymbol, ElementData> = {
     H: { name: "Hydrogen", electronegativity: 2.20 },
